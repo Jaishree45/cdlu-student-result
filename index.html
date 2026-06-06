@@ -1,0 +1,222 @@
+<html lang="en"><head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- Meta, title, CSS, favicons, etc. -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Student Result | Chaudhary Devi Lal University, Sirsa</title>
+        
+                    <link rel="icon" href="https://onlinecdlu.ac.in/assets/uploads//logo/favicon.png" type="image/x-icon">             
+                
+        <!-- Bootstrap -->
+        <link href="https://onlinecdlu.ac.in/assets/vendors/bootstrap/bootstrap.min.css" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link href="https://onlinecdlu.ac.in/assets/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">     
+        <!-- Custom Theme Style -->
+        <link href="https://onlinecdlu.ac.in/assets/css/custom.css" rel="stylesheet">
+         <style type="text/css">   
+.login_wrapper {
+    right: 0px;
+    margin: 0px auto;
+    margin-top: 2%;
+    max-width: 450px;
+    position: relative
+}
+.login_wrapper h1{
+    padding: 20px 0px;
+    border-radius: 10px 10px 0px 0px;
+}
+.login_form{
+    /* border-radius: 10px 10px 10px 10px; */
+}
+.login_content{
+    padding: 20px;
+    box-shadow:rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.login_box {
+    padding: 20px;
+    margin: auto
+}
+.demo-note{               
+    margin: 10px;
+    font-size: 18px;
+}
+.demo-button{               
+    margin: 8px;
+    font-size: 16px;
+    padding: 5px 12px !important;
+}
+
+
+    .login{    
+        background: url(assets/images/login-screen/dodger-blue.jpg);     
+        background-color: #1f92ff;
+    }
+    .login_form{
+        background: #1E90FF; 
+    }    
+    .login-button{
+        color: #171515 !important;
+        background-color: #79bcff !important;
+        border: .5px solid #e2e1e1 !important;
+    }
+    .login-button:hover{
+        background-color: #6fb1f3 !important;
+    }
+    .login_wrapper h1{   
+        background: #444444;
+        color: #eae6e6;  
+   }    
+   .form-control.has-feedback-left {
+        border: .5px solid #1E90FF;     
+   }
+    
+    
+    .login{  
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: center top;
+        background-attachment: fixed; 
+        background-repeat: no-repeat;   
+    }
+    
+</style>  
+    </head>    
+    <body class="login" oncontextmenu="return false;">     
+
+        <div class="login_wrapper">
+            <section>
+                <center>
+                                            <img src="https://onlinecdlu.ac.in/assets/uploads/logo/1616616622-brand-logo.jpg" style="max-width: 100px;" alt="">
+                                        
+                </center>
+            </section>
+            <div class="form login_form">
+                <section>
+                    <h1 class="text-center" style="font-size:30px;">Student Result CDLU</h1><br>
+                    <h3 class="text-center" style="color:#fff; font-size:20px;">Note : Kindly check Roll Number if it is less then 14 digits please prefix 00 at the start of Roll Number.</h3>
+                </section>    
+                <section class="login_content">
+                    <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                        <h3 class="red" id="ebox" style="color: rgb(255, 255, 255); display: none;"></h3>
+                        <p class="green" style="color: #fff;"></p>
+                    </div>
+                    <script>setTimeout(() => {
+                        const box = document.getElementById('ebox');
+                         box.style.display = 'none';
+                    }, 8000); </script>
+                    <form action="https://onlinecdlu.ac.in/reval_student_result/download.html" name="login" id="login" method="post" accept-charset="utf-8">
+                    
+                    <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
+                        <div class="item form-group">
+                            <select class="form-control " name="event_id" id="event_id" required="required" onchange="get_semester(this.value);">
+                                <option value="">--Select Event--</option>
+                                                                <option value="145">Dec, 2026 Year Wise</option>
+                                                                <option value="144">Dec, 2026</option>
+                                                                <option value="143">April, 2026</option>
+                                                                <option value="142">May, 2026</option>
+                                                                <option value="141">Oct, 2025 (M.Ed Spl)</option>
+                                                                <option value="140">May, 2026 Year Wise</option>
+                                                                <option value="139">Dec, 2025 Year Wise</option>
+                                                                <option value="138">Dec, 2025</option>
+                                                                <option value="137">September, 2025 Year Wise (Special Chance)</option>
+                                                                <option value="136">September, 2025 (Special Chance)</option>
+                                                                <option value="135">July, 2025</option>
+                                                                <option value="134">May, 2025 Year Wise</option>
+                                                                <option value="133">May, 2025</option>
+                                                                <option value="132">Feb-2021 Year wise </option>
+                                                                <option value="130">Apr, 2024</option>
+                                                                <option value="129">Dec, 2024 Year Wise</option>
+                                                                <option value="128">Dec, 2024</option>
+                                                                <option value="127">September, 2024 Year Wise (Special Chance)</option>
+                                                                <option value="126">September, 2024 (Special Chance)</option>
+                                                                <option value="125">July, 2024</option>
+                                                                <option value="123">Sept, 2024</option>
+                                                                <option value="122">July, 2024 Phd</option>
+                                                                <option value="120">Sept, 2024 Year Wise</option>
+                                                                <option value="119">May 2024 Year Wise</option>
+                                                                <option value="117">May, 2020 Year Wise</option>
+                                                                <option value="115">Oct, 2023</option>
+                                                                <option value="111">Dec, 2023 Year Wise</option>
+                                                                <option value="110">May, 2024</option>
+                                                                <option value="43">September, 2023 Year Wise Special Chance</option>
+                                                                <option value="42">September-2023 Special Chance</option>
+                                                                <option value="41">Dec, 2023</option>
+                                                                <option value="40">March, 2022</option>
+                                                                <option value="39">Sept, 2023 Year Wise</option>
+                                                                <option value="38">Dec, 2022 Year Wise</option>
+                                                                <option value="37">May, 2023 Year Wise</option>
+                                                                <option value="36">Dec, 2021 Year Wise</option>
+                                                                <option value="35">May, 2023</option>
+                                                                <option value="34">May, 2022 Year Wise</option>
+                                                                <option value="30">Mar, 2019</option>
+                                                                <option value="29">Apr, 2020</option>
+                                                                <option value="23">Oct, 2022</option>
+                                                                <option value="21">Dec, 2022</option>
+                                                                <option value="12">May, 2020</option>
+                                                                <option value="9">Dec, 2019</option>
+                                                                <option value="5">Sept, 2022 Year Wise</option>
+                                                                <option value="3">May, 2022</option>
+                                                                <option value="2">Dec, 2021</option>
+                                                                    
+                            </select>
+                        </div>
+                    </div>
+
+                                        <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
+                        <div class="item form-group"> 
+                            <select class="form-control col-md-7 col-xs-12" name="semster_id" id="semster_id">
+                                <option value="">--Select Semester/Year--</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
+                        <input type="text" name="roll_no" class="form-control" placeholder="Enter your roll number" autocomplete="off" required="">     
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback" style="color:#fff;">
+                        Enter the word you see below:
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback text-center">
+                    <img src="https://onlinecdlu.ac.in/captcha/1780721222.9192.jpg">
+                    </div>
+                    
+
+                    <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
+                        <input type="text" name="captcha" class="form-control" autocomplete="off" required="">
+                    </div>
+                    
+                                      
+                   
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+    <a href="dmc_card_25111116850049(2).pdf"
+       class="btn btn-primary login-button"
+       download>
+       Download Result
+    </a>
+</div>
+                      
+                    <div class="clearfix"></div>                        
+                    </form>                </section><br><br>
+            </div>
+        </div>
+       
+    
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    function get_semester(event_id){
+		  $.ajax({       
+            type   : "POST",
+            url    : "https://onlinecdlu.ac.in/reval_student_result/get_semester.html",
+            data   : {event_id:event_id},               
+            success: function(response){  
+               if(response)
+               {    
+                    $('#semster_id').html(response); 
+               }
+            }
+        });
+    }
+</script></body></html>
